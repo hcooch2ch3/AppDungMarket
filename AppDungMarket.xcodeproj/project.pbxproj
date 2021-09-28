@@ -16,6 +16,7 @@
 		36CA642226F0A0AC002B3BE7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 36CA642126F0A0AC002B3BE7 /* Alamofire */; };
 		36CA642526F0AC3F002B3BE7 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 36CA642426F0AC3F002B3BE7 /* RxSwift */; };
 		36CA642726F0AC3F002B3BE7 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 36CA642626F0AC3F002B3BE7 /* RxCocoa */; };
+		36CA642C26F1085D002B3BE7 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CA642B26F1085D002B3BE7 /* Secrets.swift */; };
 		36CA642F26F109AA002B3BE7 /* ProductEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CA642E26F109AA002B3BE7 /* ProductEntity.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,8 @@
 		36CA641526F09DFE002B3BE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36CA641826F09DFE002B3BE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36CA641A26F09DFE002B3BE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36CA642926F10244002B3BE7 /* ProductRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRepository.swift; sourceTree = "<group>"; };
+		36CA642B26F1085D002B3BE7 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		36CA642E26F109AA002B3BE7 /* ProductEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,8 +67,8 @@
 		36CA640B26F09DFC002B3BE7 /* AppDungMarket */ = {
 			isa = PBXGroup;
 			children = (
-				36CA642826F0FF06002B3BE7 /* Repositories */,
 				36CA642D26F10993002B3BE7 /* Entity */,
+				36CA642826F0FF06002B3BE7 /* Repository */,
 				36CA640C26F09DFC002B3BE7 /* AppDelegate.swift */,
 				36CA640E26F09DFC002B3BE7 /* SceneDelegate.swift */,
 				36CA641026F09DFC002B3BE7 /* ViewController.swift */,
@@ -77,7 +80,15 @@
 			path = AppDungMarket;
 			sourceTree = "<group>";
 		};
-		36CA642826F0FF06002B3BE7 /* Repositories */ = {
+		36CA642826F0FF06002B3BE7 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				36CA642926F10244002B3BE7 /* ProductRepository.swift */,
+				36CA642B26F1085D002B3BE7 /* Secrets.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 		36CA642D26F10993002B3BE7 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,10 +97,20 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
+		36CA643026F39C4A002B3BE7 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				3613E30226F9E047001A3A54 /* ProductService.swift */,
 			);
-			path = Repositories;
+			path = Service;
+			sourceTree = "<group>";
+		};
+		36CA643126F7C92B002B3BE7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3613E30026F9DFFF001A3A54 /* ProductModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,8 +193,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				36CA641126F09DFC002B3BE7 /* ViewController.swift in Sources */,
+				3613E30326F9E047001A3A54 /* ProductService.swift in Sources */,
+				36CA642C26F1085D002B3BE7 /* Secrets.swift in Sources */,
 				36CA640D26F09DFC002B3BE7 /* AppDelegate.swift in Sources */,
+				3613E30826F9E698001A3A54 /* ProductViewModel.swift in Sources */,
 				36CA640F26F09DFC002B3BE7 /* SceneDelegate.swift in Sources */,
+				3613E30526F9E2D9001A3A54 /* String+removeHTMLTag.swift in Sources */,
+				36CA642A26F10244002B3BE7 /* ProductRepository.swift in Sources */,
+				3613E30126F9DFFF001A3A54 /* ProductModel.swift in Sources */,
 				36CA642F26F109AA002B3BE7 /* ProductEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
